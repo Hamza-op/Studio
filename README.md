@@ -34,18 +34,13 @@ portfolio-website/
 git clone <repository-url>
 ```
 
-2. Create the following directory structure:
-```bash
-mkdir -p css js images/projects
-```
+2. Add your project images to the `images/projects` directory.
 
-3. Add your project images to the `images/projects` directory.
-
-4. Update the project data in `js/main.js`:
+3. Update the project data in `js/main.js`:
 - Modify the `workData` array to include your projects
 - Update image paths and project details
 
-5. Customize the content:
+4. Customize the content:
 - Update your name in `index.html`
 - Modify the about section text
 - Update social media links
