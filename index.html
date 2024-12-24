@@ -4,37 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfolio website showcasing creative work and projects">
-    <meta http-equiv="Cache-Control" content="max-age=31536000">
-    
-    <!-- Preload critical resources -->
-    <link rel="preload" href="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js" as="script">
-    <link rel="preload" href="https://lottie.host/8935ab8d-1a79-459f-bca9-7d1477e00bae/8SWmpiUCaY.json" as="fetch" crossorigin>
-    <link rel="preload" href="css/main.css" as="style">
-    <link rel="preload" href="css/animations.css" as="style">
-    <link rel="preload" href="css/loader.css" as="style">
-    <link rel="preload" href="js/main.js" as="script">
-    <link rel="preload" href="js/animations.js" as="script">
-    <link rel="preload" href="js/loader.js" as="script">
-    
     <title>Studio 110</title>
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/loader.css">
-    <script src="js/cache-manager.js" defer></script>
-    <script src="js/loader.js" defer></script>
-    <script src="js/main.js" defer></script>
-    <script src="js/animations.js" defer></script>
 </head>
 <body>
-    <header class="fade-in">
+    <header>
         <nav>
             <div class="nav-left">
                 <a href="#" class="nav-item active">WORK</a>
                 <a href="#about" class="nav-item">ABOUT & CONTACT</a>
             </div>
-            <a href="#" class="site-title">Studio 110</a>
+            <a href="#" class="site-title">STUDIO 110</a>
             <div class="nav-right">
                 <a href="https://twitter.com" target="_blank" class="social-link">
                     <svg class="icon" viewBox="0 0 24 24">
@@ -58,41 +39,42 @@
     </header>
 
     <main>
-        <section id="work" class="work-grid animate-on-scroll">
+        <section id="work" class="work-grid">
             <!-- Work grid items will be added dynamically via JavaScript -->
         </section>
 
-        <section id="about" class="about-section hidden animate-on-scroll">
+        <section id="about" class="about-section">
             <div class="about-content">
-                <h2>About</h2>
-                <p>I am a photographer and visual artist specializing in architectural and urban photography. My work focuses on capturing the essence of spaces and structures through a minimalist lens.</p>
+                <h2 class="about-title">ABOUT</h2>
+                <p class="about-text">I am a photographer and visual artist specializing in architectural and urban photography. My work focuses on capturing the essence of spaces and structures through a minimalist lens.</p>
+            </div>
+            
+            <div class="contact-section">
+                <h2 class="contact-title">CONTACT</h2>
                 <div class="contact-info">
-                    <h2>Contact</h2>
                     <p>For inquiries and collaborations:</p>
-                    <a href="tel:+923049040269" aria-label="Phone number">+92 304 904 0269</a>
-                    <a href="mailto:contact@studio110.com" aria-label="Email address">contact@studio110.com</a>
+                    <p>
+                        <a href="tel:+923049040269">+92 304 904 0269</a>
+                        <a href="mailto:contact@studio110.com">contact@studio110.com</a>
+                    </p>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="footer-content">
-            <div class="footer-text" role="contentinfo"> 2024 Studio 110. All rights reserved.</div>
-            <div class="footer-text" role="contentinfo">Crafted with passion for architecture & design</div>
+            <div class="footer-text">© 2024 Studio 110. All rights reserved.</div>
+            <div class="footer-text">Crafted with passion for architecture & design</div>
         </div>
     </footer>
-    <button class="theme-toggle" aria-label="Toggle dark and light mode">
-        <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+        <svg viewBox="0 0 24 24">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
         </svg>
     </button>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
