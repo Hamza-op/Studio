@@ -1,112 +1,110 @@
-# Portfolio Website
+# Studio 110 - Portfolio Website
 
-A modern, minimalist portfolio website inspired by Ludwig Favre's design. This website is built using HTML5, CSS3, and vanilla JavaScript, focusing on showcasing visual work in a clean and elegant manner.
+A modern, interactive portfolio website showcasing creative work and projects. Built with performance and user experience in mind.
 
 ## Features
 
-- Responsive grid layout for project showcase
-- Modern, minimalist design with dark theme
-- Smooth transitions and animations
-- Modal view for project details
-- Mobile-friendly navigation
-- Social media integration
-- About and contact sections
+### Loading Experience
+- Custom Lottie animation loading screen
+- Smooth transitions and fade effects
+- Progress bar with visual feedback
+- Floating particle effects
+- Resource preloading and caching
+
+### Performance Optimizations
+- Service Worker for offline functionality
+- Resource caching and preloading
+- Optimized animations using requestAnimationFrame
+- Efficient CSS transitions and transforms
+- Modular code structure for better maintainability
+
+### Interactive Elements
+- 3D card hover effects
+- Smooth entrance animations
+- Responsive design
+- Hardware-accelerated animations
 
 ## Project Structure
 
 ```
-portfolio-website/
-├── index.html
+studio/
 ├── css/
+│   ├── normalize.css
 │   ├── main.css
-│   └── normalize.css
+│   ├── animations.css
+│   └── loader.css
 ├── js/
-│   └── main.js
-├── images/
-│   └── projects/
+│   ├── main.js
+│   ├── animations.js
+│   ├── loader.js
+│   └── cache-manager.js
+├── index.html
+├── service-worker.js
 └── README.md
 ```
 
-## Setup Instructions
+## Technical Details
 
-1. Clone the repository:
-```bash
-git clone <repository-url>
-```
+### Loading System
+- Uses Lottie for high-quality vector animations
+- Implements a cache manager for resource preloading
+- Service Worker for offline functionality
+- Minimum 2-second loading time for smooth transitions
 
-2. Add your project images to the `images/projects` directory.
+### Animation System
+- Hardware-accelerated 3D transforms
+- Efficient requestAnimationFrame usage
+- Optimized for performance
+- Clean animation cleanup
 
-3. Update the project data in `js/main.js`:
-- Modify the `workData` array to include your projects
-- Update image paths and project details
-
-4. Customize the content:
-- Update your name in `index.html`
-- Modify the about section text
-- Update social media links
-- Add your contact information
-
-## Development
-
-To run the website locally, you can use any local server. Here's an example using Python:
-
-```bash
-# Python 3
-python -m http.server 8000
-
-# Python 2
-python -m SimpleHTTPServer 8000
-```
-
-Then visit `http://localhost:8000` in your browser.
-
-## Deployment
-
-The website can be deployed to any static hosting service. Here are some recommended options:
-
-1. GitHub Pages
-2. Netlify
-3. Vercel
-4. AWS S3
-5. Firebase Hosting
+### Caching System
+- Service Worker based caching
+- Resource preloading
+- Offline functionality
+- Automatic cache updates
 
 ## Browser Support
-
-The website is compatible with modern browsers:
-
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
 
-## Customization
+## Performance Considerations
+- All animations are optimized for 60fps
+- Resources are cached for faster subsequent loads
+- Smooth transitions between states
+- Efficient memory management
+- Hardware acceleration where possible
 
-### Colors
-To modify the color scheme, edit the CSS variables in `css/main.css`:
+## Development
 
-```css
-:root {
-    --background-color: #000000;
-    --text-color: #ffffff;
-    --accent-color: #333333;
-    --spacing-unit: 20px;
-}
-```
+### Prerequisites
+- Modern web browser
+- Local web server for testing
 
-### Grid Layout
-To modify the grid layout, adjust the following CSS in `css/main.css`:
+### Running Locally
+1. Clone the repository
+2. Serve the files using a local web server
+3. Open `index.html` in your browser
 
-```css
-.work-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-```
+### Making Changes
+- CSS changes: Update relevant files in `/css`
+- JS changes: Update relevant files in `/js`
+- Loading animation: Modify Lottie animation in `loader.js`
+
+## Best Practices
+- Use `will-change` sparingly
+- Implement proper cleanup for animations
+- Follow modular code structure
+- Maintain clean and documented code
+- Test across different devices and browsers
+
+## Future Improvements
+- Add more interactive elements
+- Enhance offline capabilities
+- Implement dynamic content loading
+- Add more animation variations
+- Further performance optimizations
 
 ## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Credits
-
-- Design inspired by Ludwig Favre's portfolio
-- Normalize.css by Nicolas Gallagher 
+All rights reserved Studio 110
