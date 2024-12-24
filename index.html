@@ -7,8 +7,19 @@
     <title>Studio 110</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script>
 </head>
 <body>
+    <div id="loading-overlay">
+        <lottie-player 
+            src="https://lottie.host/8935ab8d-1a79-459f-bca9-7d1477e00bae/8SWmpiUCaY.json" 
+            background="#ffffff" 
+            speed="1" 
+            loop 
+            autoplay>
+        </lottie-player>
+    </div>
+
     <header>
         <nav>
             <div class="nav-left">
@@ -76,5 +87,10 @@
     </button>
 
     <script src="js/main.js"></script>
+    <script>
+        setTimeout(() => {
+            document.getElementById('loading-overlay').style.display = 'none';
+        }, 2000);
+    </script>
 </body>
 </html>

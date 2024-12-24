@@ -1,30 +1,32 @@
-# Studio 110 - Portfolio Website
+# Studio 110 Portfolio Website
 
-A modern, interactive portfolio website showcasing creative work and projects. Built with performance and user experience in mind.
+A modern, responsive portfolio website showcasing creative work and projects.
 
 ## Features
 
-### Loading Experience
-- Custom Lottie animation loading screen
-- Smooth transitions and fade effects
-- Progress bar with visual feedback
-- Floating particle effects
-- Resource preloading and caching
+- Clean, minimalist design
+- Responsive grid layout for work showcase
+- Dark/Light mode toggle
+- Loading animation
+- About & Contact sections
+- Social media integration
+- Mobile-friendly navigation
 
-### Performance Optimizations
-- Service Worker for offline functionality
-- Resource caching and preloading
-- Optimized animations using requestAnimationFrame
-- Efficient CSS transitions and transforms
-- Modular code structure for better maintainability
+## Technologies Used
 
-### Interactive Elements
-- 3D card hover effects
-- Smooth entrance animations
-- Responsive design
-- Hardware-accelerated animations
+- HTML5
+- CSS3
+- JavaScript
+- [Lottie Files](https://lottiefiles.com/) for loading animation
+- Normalize.css for consistent styling
 
-## Project Structure
+## Setup
+
+1. Clone the repository
+2. Open `index.html` in your browser
+3. No build process required - it's a static website
+
+## Structure
 
 ```
 studio/
